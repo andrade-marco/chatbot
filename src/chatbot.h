@@ -28,7 +28,6 @@ public:
     ~ChatBot();
 
     //// STUDENT CODE
-    ////
     ChatBot(const ChatBot &source); // copy constructor
     ChatBot(ChatBot &&source); // move constructor
 

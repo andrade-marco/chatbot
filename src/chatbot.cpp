@@ -46,9 +46,9 @@ ChatBot::~ChatBot()
 ChatBot::ChatBot(const ChatBot &source) { // copy constructor
     std::cout << "ChatBot Copy Constructor called..." << std::endl;
 
-    *_currentNode = *source._currentNode;
-    *_rootNode = *source._rootNode;
-    *_chatLogic = *source._chatLogic;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
 }
 
 ChatBot::ChatBot(ChatBot &&source) { // move constructor
@@ -69,9 +69,9 @@ ChatBot& ChatBot::operator=(const ChatBot &source) { // copy assignment operator
         delete _rootNode;
         delete _chatLogic;
 
-        *_currentNode = *source._currentNode;
-        *_rootNode = *source._rootNode;
-        *_chatLogic = *source._chatLogic;
+        _currentNode = source._currentNode;
+        _rootNode = source._rootNode;
+        _chatLogic = source._chatLogic;
     }
 
     return *this;
