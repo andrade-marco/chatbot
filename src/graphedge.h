@@ -3,8 +3,9 @@
 
 #include <vector>
 #include <string>
+#include "graphnode.h"
 
-class GraphNode; // forward declaration
+//class GraphNode; // forward declaration
 
 class GraphEdge
 {
