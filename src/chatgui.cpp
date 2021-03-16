@@ -115,7 +115,6 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
     // allow for PNG images to be handled
     wxInitAllImageHandlers();
 
-    //// STUDENT CODE
     // create chat logic instance
     _chatLogic = std::make_unique<ChatLogic>();
 
